@@ -1,9 +1,8 @@
 import threading
 
-from sqlalchemy import func, distinct, Column, String, UnicodeText, Integer
+from sqlalchemy import func, distinct, Column, String, UnicodeText, BigInteger
 
 from Tianabot.modules.sql import SESSION, BASE
-
 
 class BlackListFilters(BASE):
     __tablename__ = "blacklist"
@@ -24,11 +23,10 @@ class BlackListFilters(BASE):
             and self.trigger == other.trigger
         )
 
-
 class BlacklistSettings(BASE):
     __tablename__ = "blacklist_settings"
     chat_id = Column(String(14), primary_key=True)
-    blacklist_type = Column(Integer, default=1)
+    blacklist_type = Column(BigInteger, default=1)
     value = Column(UnicodeText, default="0")
 
     def __init__(self, chat_id, blacklist_type=1, value="0"):
