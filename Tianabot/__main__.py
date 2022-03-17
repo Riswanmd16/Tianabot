@@ -90,7 +90,7 @@ PM_START_TEXT = """
 × *Uᴘᴛɪᴍᴇ:* `{}`
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
 ───────────────────────
-× *Pᴏᴡᴇʀᴇᴅ Bʏ: Tᴇᴀᴍ Tɪᴀɴᴀ!*
+× *Pᴏᴡᴇʀᴇᴅ Bʏ: @Crazy_boy_riswan!*
 ───────────────────────"""
 
 buttons = [
@@ -243,7 +243,7 @@ def start(update: Update, context: CallbackContext):
 × *Uᴘᴛɪᴍᴇ:* `{}`
 × `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
 ───────────────────
-× *Pᴏᴡᴇʀᴇᴅ Bʏ: Tᴇᴀᴍ Tɪᴀɴᴀ*
+× *Pᴏᴡᴇʀᴇᴅ Bʏ: @Crazy_boy_riswan*
 ───────────────────""".format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
